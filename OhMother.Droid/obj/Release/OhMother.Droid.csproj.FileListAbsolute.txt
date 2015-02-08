@@ -1,0 +1,17 @@
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\bin\Release\OhMother.Droid.dll
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\bin\Release\OhMother.Droid.pdb
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\bin\Release\OhMother.Droid.apk
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\bin\Release\OhMother.Droid-Signed.apk
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\OhMother.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\OhMother.Droid.dll
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\OhMother.Droid.pdb
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\android\bin\OhMother.Droid.apk
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\layout\main.xml
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\values\strings.xml
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\drawable-hdpi\icon.png
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\drawable-mdpi\icon.png
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\drawable-xhdpi\icon.png
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\drawable-xxhdpi\icon.png
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\res\drawable-xxxhdpi\icon.png
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\R.cs.flag
+C:\Users\Sabir\Documents\Visual Studio 2013\Projects\OhMother\OhMother.Droid\obj\Release\uploadflags.txt

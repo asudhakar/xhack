@@ -1,0 +1,86 @@
+﻿<Page
+    x:Class="OhMother.Views.StoresPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OhMother.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="tbStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="/Assets/Fonts/Aliquam.ttf#Aliquam" />
+        </Style>
+        <LinearGradientBrush x:Key="pinkBG" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFF26A82" Offset="0"/>
+            <GradientStop Color="#FFF47177" Offset="0.497"/>
+            <GradientStop Color="#FFF87B67" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <Grid x:Name="LayoutRoot" Background="{StaticResource pinkBG}">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Oh Mother!" FontSize="20" Margin="0,12,0,0"/>
+            <TextBlock Text="My Stores" FontSize="45" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+
+        <!--TODO: Content should be placed within the following grid-->
+        <StackPanel Grid.Row="1">
+            <ListView x:ConnectionId='1'           
+            x:Name="listview"
+            Grid.Row="2" Margin="20,20,20,0"
+            ItemsSource="{Binding}"
+            IsItemClickEnabled="True"
+            ScrollViewer.VerticalScrollMode="Enabled"       
+            ScrollViewer.VerticalScrollBarVisibility="Visible"
+            ScrollViewer.IsVerticalScrollChainingEnabled="True"
+                                          
+            ScrollViewer.IsVerticalRailEnabled="True"
+            BorderThickness="2" 
+             >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="BorderThickness" Value="0,0,0,0.5"/>
+                        <Setter Property="BorderBrush" Value="Gray"/>
+                        <Setter Property="Padding" Value="0,0,0,25"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate >
+                    <DataTemplate x:Name="dataTemp">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock>
+                                <Run Text="{Binding StoreName}"  
+                                             FontWeight="SemiBold"
+                                             FontSize="26"  />
+                                <Run Text="    :    " FontSize="26" />
+                                <Run Text ="{Binding Matches}" 
+                                             FontSize="21"/>
+                                </TextBlock>
+                                <TextBlock Foreground="DarkGray">
+                                    <Run Text="Distance :" FontSize="18"/>
+                                    <Run Text="{Binding Distance}" 
+                                             FontSize="18"/>
+                                </TextBlock> 
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>
+
